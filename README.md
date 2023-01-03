@@ -15,14 +15,14 @@ Data seluruh hasil pelaksanaan program
 ```json
 [
   {
-    "K": Number {kebijakan},
-    "P": Number {program},
-    "No": Numbuer {nomor},
-    "Indikator Kinerja": String {indikator},
-    "Satuan": {satuan data},
-    "Target": String / Number {rencana/target},
-    "Realisasi": String / Number {realisasi},
-    "Keterangan": String {tercapai/belum tercapai}
+    "K": "Number {kebijakan}",
+    "P": "Number {program}",
+    "No": "Numbuer {nomor}",
+    "Indikator Kinerja": "String {indikator}",
+    "Satuan": "String {satuan data}",
+    "Target": "String / Number {rencana/target}",
+    "Realisasi": "String / Number {realisasi}",
+    "Keterangan": "String {tercapai/belum tercapai}"
   }
 ]
 ```
