@@ -33,8 +33,8 @@ class Server {
     api.use(json());
     new DasboardAPI(this, api);
     
-    api.listen(this.server.config.http.port, () => {
-      this.sendLogs("Started, Listening " + this.server.config.http.port);
+    api.listen(3000, () => {
+      this.sendLogs("Started, Listening " + 3000);
     });
   }
 
