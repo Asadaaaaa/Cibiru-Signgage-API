@@ -1,6 +1,6 @@
 # Cibiru Signgage API
 
-Cibiru Signage adalah sebuah proyek yang bertujuan untuk membuat sebuah company profile serta info grafis tentang fakultas di kampus, yang berisi data jumlah mahasiswa pertahunnya, jumlah capaian, target capaian fakultas, dan informasi lainya. Proyek ini akan menggunakan sebuah website sebagai platformnya, dan akan terdiri dari sebuah dashboard yang dapat diakses oleh pengguna melalui Signgage tersebut.
+Cibiru Signgage adalah sebuah proyek yang bertujuan untuk membuat sebuah company profile serta info grafis tentang fakultas di kampus, yang berisi data jumlah mahasiswa pertahunnya, jumlah capaian, target capaian fakultas, dan informasi lainya. Proyek ini akan menggunakan sebuah website sebagai platformnya, dan akan terdiri dari sebuah dashboard yang dapat diakses oleh pengguna melalui Signgage tersebut.
 
 ## Endpoints
 
