@@ -1,11 +1,12 @@
-import FileDataHandler from './utils/FileDataHandler.js';
+import Config from './resources/config.js';
+import ModelHandler from './models/ModelHandler.js';
 import DasboardAPI from './components/dashboard/API/Handler.js';
 
 // Library
 import Express, { json } from 'express';
 
 class Server {
-  server = {
+  data = {
     config: null
   }
 
@@ -18,10 +19,10 @@ class Server {
   async init() {
     this.sendLogs("Loading Data...");
 
-    const fileDataHandler = new FileDataHandler();
+    this.data.config = Config;
 
-    fileDataHandler.resourceLoader();
-    this.server.config = await fileDataHandler.getFileData('config.yml', 'YAML');
+    this.model = new ModelHandler(this);
+    await this.model.connect();
 
     this.sendLogs("Starting API...")
     this.run();
@@ -33,8 +34,8 @@ class Server {
     api.use(json());
     new DasboardAPI(this, api);
     
-    api.listen(3000, () => {
-      this.sendLogs("Started, Listening " + 3000);
+    api.listen(this.data.config.port, () => {
+      this.sendLogs("Started, Listening " + this.data.config.port);
     });
   }
 
