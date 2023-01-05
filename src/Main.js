@@ -1,4 +1,4 @@
-import Config from './resources/config.js';
+import Config from './resources/Config.js';
 import ModelHandler from './models/ModelHandler.js';
 import DasboardAPI from './components/dashboard/API/Handler.js';
 
