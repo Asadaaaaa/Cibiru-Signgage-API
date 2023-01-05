@@ -5,7 +5,7 @@ class ModelHandler {
     this.server = server;
   }
 
-  async connect(auth) {
+  async connect() {
     this.client = new MongoClient(this.server.data.config.database.auth);
 
     await this.client.connect();
