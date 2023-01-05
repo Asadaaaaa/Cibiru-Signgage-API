@@ -4,6 +4,8 @@ Cibiru Signgage adalah sebuah proyek yang bertujuan untuk membuat sebuah company
 
 ## Endpoints
 
+Host: https://cibiru-signgage-api.vercel.app
+
 ### Laporan Pelaksanaan Program
 
 #### GET /api/laporanPelaksanaanProgram/all
@@ -26,7 +28,6 @@ Data hasil laporan pelaksanaan program
     "Realisasi": "String / Number {realisasi}",
     "Keterangan": "String {tercapai/belum tercapai}"
   }
-  // ...
 ]
 ```
 
