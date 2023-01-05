@@ -6,9 +6,11 @@ Cibiru Signgage adalah sebuah proyek yang bertujuan untuk membuat sebuah company
 
 ### Laporan Pelaksanaan Program
 
-#### GET /api/laporanPelaksanaanProgram
+#### GET /api/laporanPelaksanaanProgram/all
+#### GET /api/laporanPelaksanaanProgram/id?id=
+#### GET /api/laporanPelaksanaanProgram/kp?kebijakan=&program=
 
-Data seluruh hasil pelaksanaan program
+Data hasil laporan pelaksanaan program
 
 **Response**
 
@@ -24,6 +26,7 @@ Data seluruh hasil pelaksanaan program
     "Realisasi": "String / Number {realisasi}",
     "Keterangan": "String {tercapai/belum tercapai}"
   }
+  // ...
 ]
 ```
 
