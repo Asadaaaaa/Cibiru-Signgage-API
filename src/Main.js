@@ -31,6 +31,9 @@ class Server {
   run() {
     const api = Express();
     
+    api.use(cors({
+      origin: '*',
+    }));
     api.use(json());
     new DasboardAPI(this, api);
     
