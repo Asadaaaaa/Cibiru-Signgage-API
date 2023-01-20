@@ -4,6 +4,7 @@ import DasboardAPI from './components/dashboard/API/Handler.js';
 
 // Library
 import Express, { json } from 'express';
+import cors from 'cors';
 
 class Server {
   data = {
