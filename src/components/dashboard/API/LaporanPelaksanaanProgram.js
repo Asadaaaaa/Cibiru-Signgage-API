@@ -35,7 +35,7 @@ class LaporanPelaksanaanProgram {
   async getAll(req, res) {
     const data = await (await this.server.model.db.collection('data-laporan-pelaksanaan-program').find({})).toArray();
 
-    res.status(200).json(data);
+    res.status(200).json({data});
   }
 
   async getId(req, res) {
@@ -43,7 +43,7 @@ class LaporanPelaksanaanProgram {
 
     const data = await (await this.server.model.db.collection('data-laporan-pelaksanaan-program').find(ObjectId(id))).toArray();
 
-    res.status(200).json(data);
+    res.status(200).json({data});
   }
 
   async getKebijakanProgram(req, res) {
@@ -52,7 +52,7 @@ class LaporanPelaksanaanProgram {
 
     const data = await (await this.server.model.db.collection('data-laporan-pelaksanaan-program').find({K: Number(kebijakan), P: Number(program)})).toArray();
 
-    res.status(200).json(data);
+    res.status(200).json({data});
   }
 };
 
